@@ -7,7 +7,7 @@
 terraform {
   backend "s3" {
     bucket = "tf-state-dbrev74"
-    key    = "/opt/mikikube.tfstate"
+    key    = "opt/mikikube.tfstate"
     region = "us-east-1"
   }
 }
