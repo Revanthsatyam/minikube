@@ -1,6 +1,14 @@
+# terraform {
+#   backend "local" {
+#     path = "/opt/mikikube.tfstate"
+#   }
+# }
+
 terraform {
-  backend "local" {
-    path = "/opt/mikikube.tfstate"
+  backend "s3" {
+    bucket = "tf-state-dbrev74"
+    key    = "/opt/mikikube.tfstate"
+    region = "us-east-1"
   }
 }
 
